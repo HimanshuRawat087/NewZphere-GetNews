@@ -30,8 +30,8 @@ export class News extends Component {
             return (
               <div className="col-md-3 my-4" key={element.url}>
                 <NewsItem
-                  title={element.title?element.title.slice(0,40) + "....." : " "}
-                  description={element.description?element.description.slice(0, 65) + "....." : " "}
+                  title={element.title?element.title.slice(0,30) + "..." : " "}
+                  description={element.description?element.description.slice(0, 65) + "..." : " "}
                   imageUrl={element.urlToImage?element.urlToImage:"https://demofree.sirv.com/nope-not-here.jpg"}
                   newsUrl={element.url}
                 />
